@@ -1,11 +1,13 @@
+
 <!DOCTYPE html>
 <html lang="it">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-    <title>Richiedi un preventivo</title>
+    <title>Website Diagnosis — Estefania Zappatore</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -18,11 +20,11 @@
 
             <header class="chat-header">
 
-                <div class="logo">🔧</div>
+                <div class="logo">✦</div>
 
                 <div class="brand">
-                    <h1>EasyWordPress</h1>
-                    <p>Diagnosi del problema</p>
+                    <h1>Website Diagnosis</h1>
+                    <p>Estefania Zappatore · Diagnosi e progetti web</p>
                 </div>
 
                 <div class="status">
@@ -32,11 +34,12 @@
 
             </header>
 
-
             <div class="progress-area">
 
                 <div class="progress-label">
-                    <span id="progress-text">Analisi del problema</span>
+                    <span id="progress-text">
+                        Analisi della richiesta
+                    </span>
                     <span id="progress-count"></span>
                 </div>
 
@@ -46,9 +49,7 @@
 
             </div>
 
-
             <div id="chat" class="chat"></div>
-
 
             <div id="typing" class="typing hidden">
                 <span></span>
@@ -56,30 +57,31 @@
                 <span></span>
             </div>
 
-
             <div id="options" class="options"></div>
-
 
             <div id="result" class="result hidden"></div>
 
-
-            <div id="contact-form" class="contact-form hidden">
+            <div
+                id="contact-form"
+                class="contact-form hidden"
+            >
 
                 <div class="form-intro">
 
                     <div class="form-icon">✉️</div>
 
                     <div>
+
                         <h2>Procediamo?</h2>
 
                         <p>
-                            Inserisci i tuoi dati per ricevere
-                            il riepilogo e procedere con la richiesta.
+                            Inserisci i tuoi dati per preparare
+                            il riepilogo della richiesta.
                         </p>
+
                     </div>
 
                 </div>
-
 
                 <label for="name">Nome</label>
 
@@ -87,8 +89,8 @@
                     id="name"
                     type="text"
                     placeholder="Il tuo nome"
+                    autocomplete="name"
                 >
-
 
                 <label for="email">Email</label>
 
@@ -96,8 +98,8 @@
                     id="email"
                     type="email"
                     placeholder="nome@email.it"
+                    autocomplete="email"
                 >
-
 
                 <label for="website">Sito web</label>
 
@@ -107,24 +109,25 @@
                     placeholder="https://iltuosito.it"
                 >
 
-
-                <button id="submit-contact">
+                <button
+                    id="submit-contact"
+                    type="button"
+                >
                     Continua →
                 </button>
 
-
                 <small>
-                    I dati saranno utilizzati per gestire la tua richiesta.
+                    Questa è una versione dimostrativa.
+                    I dati non vengono ancora inviati.
+                    Non inserire password o informazioni sensibili.
                 </small>
 
             </div>
 
-
-            <!-- =========================================
-                 RESTART
-            ========================================== -->
-
-            <div id="restart-container" class="restart-container hidden">
+            <div
+                id="restart-container"
+                class="restart-container hidden"
+            >
 
                 <button
                     id="restart-button"
@@ -140,11 +143,12 @@
 
     </main>
 
-
     <script src="questions.js"></script>
     <script src="results.js"></script>
     <script src="script.js"></script>
 
-</body>
+    <!-- Modulo aggiuntivo: preventivi nuovi servizi -->
+    <script src="services.js"></script>
 
+</body>
 </html>
